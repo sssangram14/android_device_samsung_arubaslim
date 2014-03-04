@@ -14,13 +14,14 @@
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/arubaslim/overlay
 
+PRODUCT_COPY_FILES += \
+$(call inherit-product, vendor/samsung/arubaslim/vendor-blobs.mk)
+
 ## Build recovery?
 #BUILD_RECOVERY := true
 
 include device/samsung/msm7x27a-common/msm7x27a.mk
 
-PRODUCT_COPY_FILES += \
-$(call inherit-product, vendor/samsung/arubaslim/vendor-blobs.mk)
 
 ifndef BUILD_RECOVERY
 ## Splash screen
