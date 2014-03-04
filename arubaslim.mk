@@ -34,4 +34,9 @@ PRODUCT_COPY_FILES += \
     device/samsung/arubaslim/rootdir/initlogo-cwm.rle:root/initlogo.rle
 endif
 
-$(call inherit-product, vendor/samsung/arubaslim/blobs.mk)
+PRODUCT_COPY_FILES += \
+    device/samsung/arubaslim/idc/qwerty.idc:system/usr/idc/qwerty.idc \
+    device/samsung/arubaslim/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
+    device/samsung/arubaslim/keychars/7x27a_kp.kcm:system/usr/keychars/7x27a_kp.kcm \
+    device/samsung/arubaslim/keylayout/7x27a_kp.kl:system/usr/keylayout/7x27a_kp.kl \
+    device/samsung/arubaslim/keylayout/surf_keypad.kl:system/usr/keylayout/surf_keypad.kl

@@ -23,8 +23,14 @@ TARGET_BOOTLOADER_BOARD_NAME := arubaslim
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x03200000
-BOARD_PAGE_SIZE := 2048
+BOARD_PAGE_SIZE := 4096
 TARGET_PREBUILT_KERNEL := device/samsung/arubaslim/kernel
+
+# Recovery
+TARGET_RECOVERY_FSTAB := device/samsung/arubaslim/rootdir/fstab.qcom
+
+# Audio
+TARGET_PROVIDES_LIBAUDIO := true
 
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/arubaslim/bluetooth
