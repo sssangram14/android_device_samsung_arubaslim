@@ -35,5 +35,8 @@ TARGET_PROVIDES_LIBAUDIO := true
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/arubaslim/bluetooth
 
+## Use device specific modules
+TARGET_PROVIDES_LIBLIGHTS := true
+
 ## OTA assert
 TARGET_OTA_ASSERT_DEVICE := arubaslim,GT_I8262
