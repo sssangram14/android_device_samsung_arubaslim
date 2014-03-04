@@ -22,7 +22,7 @@ TARGET_BOOTLOADER_BOARD_NAME := arubaslim
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
-BOARD_KERNEL_BASE := 0x03200000
+BOARD_KERNEL_BASE := 0x00200000
 BOARD_PAGE_SIZE := 4096
 TARGET_PREBUILT_KERNEL := device/samsung/arubaslim/kernel
 
