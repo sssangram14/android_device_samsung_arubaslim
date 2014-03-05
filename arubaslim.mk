@@ -40,3 +40,30 @@ PRODUCT_COPY_FILES += \
     device/samsung/arubaslim/keychars/7x27a_kp.kcm:system/usr/keychars/7x27a_kp.kcm \
     device/samsung/arubaslim/keylayout/7x27a_kp.kl:system/usr/keylayout/7x27a_kp.kl \
     device/samsung/arubaslim/keylayout/surf_keypad.kl:system/usr/keylayout/surf_keypad.kl
+    
+# Properties
+
+## RIL, network
+rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+
+
+## Display, graphics
+ro.sf.lcd_density=240
+ro.opengles.version=131072
+ro.max.fling_velocity=4000
+ro.bq.gpu_to_cpu_unsupported=1
+debug.sf.hw=1
+debug.gr.numframebuffers=3
+debug.composition.type=dyn
